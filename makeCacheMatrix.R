@@ -26,6 +26,6 @@ cachesolve <- function(x, ...) {  ## Return a matrix that is the inverse of 'x
   }
   data <- x$get()
   m <- solve(data) %*% data
-  x$setmean(m)
+  x$setmatrix(m)
   m
 }
